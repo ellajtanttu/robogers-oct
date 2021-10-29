@@ -87,3 +87,8 @@ Code:
 beepBoop(4);
 Expected Output: [0,"Beep!",2,3,4,]
 
+Test: "It should replace 3 with 'Won't you be my neighbor?' in an output array"
+Code:
+beepBoop(4);
+Expected Output: [0,"Beep!",2,"Won't you be my neighbor?",4,]
+

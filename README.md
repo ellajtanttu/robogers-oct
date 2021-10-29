@@ -86,3 +86,4 @@ Test: "It should replace 1 with 'Beep!' in an output array"
 Code:
 beepBoop(4);
 Expected Output: [0,"Beep!",2,3,4,]
+

@@ -62,4 +62,12 @@ I'll need:
 4. A conditional that recognises 3; first place
 5. UI that will clear the form for re-use
 
+* (all in same function)
+
 ## Specs
+Describe: beepBoop()
+
+Test: "It should return 0 if the number 0 is inputted"
+Code:
+beepBoop(0);
+Expected Output: 0

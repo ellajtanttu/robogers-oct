@@ -1,6 +1,7 @@
 // Business Logic:
-function beepBoop(number) {
+function beepBoop(number,name) {
   const inputNumber = number;
+  const inputName = name;
   let inputRange = [];
   let outputRange = [];
   if (inputNumber.toString().includes("-")) {
@@ -14,7 +15,7 @@ function beepBoop(number) {
   inputRange.forEach(function(element) {
     const stringElement = element.toString();
     if (stringElement.includes("3")) {
-      outputRange.push("Won't you be my neighbor?");
+      outputRange.push("Won't you be my neighbor, " + inputName + " ?");
     } else if (stringElement.includes("2")) {
       outputRange.push("Boop!");
     } else if (stringElement.includes("1")) {
@@ -26,6 +27,7 @@ function beepBoop(number) {
   console.log(outputRange);
   return outputRange;
 };
+
 
 // UI Logic:
 $(document).ready(function() {

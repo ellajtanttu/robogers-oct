@@ -77,7 +77,7 @@ Code:
 beepBoop(4);
 Expected Output: [0,1,2,3,4]
 
-Test: "It should return array range from 0 to 4 if the number 4 is inputted"
+Test: "It should push 'found one' to end of array if 1 is present"
 Code:
 beepBoop(4);
-Expected Output: [0,1,2,3,4]
+Expected Output: [0,1,2,3,4,"found one"]

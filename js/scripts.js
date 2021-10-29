@@ -37,9 +37,10 @@ $(document).ready(function() {
     $(".list-group").empty()
 
     const formInput = parseInt($("#inputNum").val());
+    const formInputName = $("#inputName").val();
     let resultArray = [];
     console.log("formInput = " + formInput);
-    resultArray = beepBoop(formInput);
+    resultArray = beepBoop(formInput, formInputName);
     console.log("resultArray = " + resultArray);
     resultArray.forEach(function(element) {
       $(".list-group").append("<li class='list-group-item'>" + element + "</li>");

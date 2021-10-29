@@ -31,24 +31,51 @@ function beepBoop(number,name) {
 
 // UI Logic:
 $(document).ready(function() {
+
   $("#numberInput").submit(function(event) {
     event.preventDefault();
-    $(".results").show();
-    $(".list-group").empty()
 
     const formInput = parseInt($("#inputNum").val());
     const formInputName = $("#inputName").val();
-    let resultArray = [];
     console.log("formInput = " + formInput);
+  
+    let resultArray = [];
     resultArray = beepBoop(formInput, formInputName);
     console.log("resultArray = " + resultArray);
+
+    $(".results").show();
+    $(".list-group").empty()
+
+
     resultArray.forEach(function(element) {
       $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
     });
 
+
+    // $("#defaultOrder").click(function() {
+    //   $(".list-group").empty();
+    //   console.log("list group emptied")
+    //   resultArray.forEach(function(element) {
+    //     $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
+    //     console.log("item appended")
+
+    //   });
+    // });
+    // $("b#ReverseOrder").click(function() {
+    //   $(".list-group").empty();
+    //   console.log("list group emptied")
+    //   resultArray.forEach(function(element) {
+    //     $(".list-group").prepend("<li class='list-group-item'>" + element + "</li>");
+    //     console.log("item prepended")
+    //   });
+    // });
+
+
   });
   $("#clear").submit(function(event) {
     event.preventDefault();
+    $(".results").hide();
     $(".list-group").empty();
   });
+
 });

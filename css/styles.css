@@ -2,6 +2,7 @@
 font-family: 'Megrim', cursive; */
 
 body {
+  background-color: black;
   background-image: url("https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2680&q=80");
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -12,7 +13,6 @@ body {
 }
 img {
   max-width: 100%;
-
 }
 h1 {
   font-family: 'Megrim', cursive;
@@ -22,6 +22,14 @@ h3 {
   font-family: 'Megrim', cursive;
   font-size: 3vw;
 }
+li {
+    float: left;
+    width: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: 0.05em;
+}
 .container {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -29,9 +37,9 @@ h3 {
 }
 .intro {
   margin-bottom: 30px;
-  border-width: 0 0 5px 0; /* top right bottom left */
+  /* border-width: 0 0 5px 0; /* top right bottom left 
   border-style: solid dotted inset double;  
-  border-color: white;
+  border-color: white; */
   line-height: 200%;
 }
 .inputArea {
@@ -43,21 +51,35 @@ h3 {
 }
 .btn {
   background-color: rgba(151, 253, 248, 0.411);
+  width: 100%;
 }
-li {
-  float: left;
+.form-group {
   width: auto;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: .75em;
-  letter-spacing: 0.05em;
 }
 .list-group-item {
   background-color: rgba(0, 0, 0, 0.521);
   list-style-type: none;
   overflow: hidden;
-  border-width: 0 0 1px 0; 
+  border-width: 0 0 5px 0; 
   border-style: solid dotted inset double;  
   border-color: rgba(255, 255, 255, 0.349);
   margin-bottom: 30px;
+}
+.col-md#imgDiv {
+  display: none;
+  border-width: 5px; 
+  border-style: solid;  
+  border-color: white;
+  margin-bottom: 35px;
+  max-width: 50vw;
+  border-radius: 25vw;
+  box-shadow: 5px 10px 10px #ffffff;
+  margin-right: 25px;
+}
+#introDiv {
+  width: 100%;
+}
+
+#mrRob {
+  max-height: 300px;
 }

@@ -38,17 +38,26 @@ $(document).ready(function() {
     const formInput = parseInt($("#inputNum").val());
     const formInputName = $("#inputName").val();
     console.log("formInput = " + formInput);
+
+    const orderInput = $("#resultOrder").val();
+    console.log("orderInput = " + orderInput);
   
     let resultArray = [];
     resultArray = beepBoop(formInput, formInputName);
     console.log("resultArray = " + resultArray);
 
     $(".results").show();
-    $(".list-group").empty()
+    $(".col-md#imgDiv").show();
+    $(".list-group").empty();
 
 
     resultArray.forEach(function(element) {
-      $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
+      if (orderInput === "leastToGreatest") {
+        $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
+      } else {
+        $(".list-group").prepend("<li class='list-group-item'>" + element + "</li>");
+      };
+    
     });
 
 

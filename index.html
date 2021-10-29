@@ -17,10 +17,10 @@
 
     <div class="intro">
       <div class="row">
-        <div class="col-lg-4">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngarts.com%2Ffiles%2F3%2FHuman-Robot-PNG-Image.png&f=1&nofb=1">
+        <div class="col-md" id="imgDiv">
+          <img id="mrRob" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngarts.com%2Ffiles%2F3%2FHuman-Robot-PNG-Image.png&f=1&nofb=1" alt="robot thinking">
         </div>
-        <div class="col-lg-8">
+        <div class="col-md" id="introDiv">
           <div id="introText">
           <h1>Mr. Roboger's Neighborhood</h1>
           <p>Mr. Roboger is a well loved and long-term fixture of our neighborhood. He performs a very important role for us:
@@ -34,18 +34,29 @@
     <div class="inputArea">
       <form id="numberInput">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg">
             <div class="form-group">
               <input id="inputName" class="form-control" type="text" placeholder="Enter your human name">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg">
             <div class="form-group">
-              <input id="inputNum" class="form-control" type="text" placeholder="Enter a number, any number">
+              <input id="inputNum" class="form-control" type="text" placeholder="Enter any number">
             </div>
           </div>
+          <div class="col-lg">
+            <div class="form-group">
+              <select class="form-control" id="resultOrder" aria-placeholder="Number Order:">
+                <option selected>Order of Results</option>
+                <option value="leastToGreatest">Least to Greatest</option>
+                <option value="greatestToLeast">Greatest to Least</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg">
+            <button type="submit" class="btn">Translate</button>
+          </div>
         </div>
-        <button type="submit" class="btn">Translate</button>
         </form>
     </div>
 

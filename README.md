@@ -81,3 +81,8 @@ Test: "It should push 'found one' to end of array if 1 is present"
 Code:
 beepBoop(4);
 Expected Output: [0,1,2,3,4,"found one"]
+
+Test: "It should replace 1 with 'Beep!' in an output array"
+Code:
+beepBoop(4);
+Expected Output: [0,"Beep!",2,3,4,]

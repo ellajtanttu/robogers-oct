@@ -7,7 +7,8 @@ function beepBoop(number) {
     inputRange.push(i);
   }
   inputRange.forEach(function(element) {
-    if (element === 3) {
+    const stringElement = element.toString();
+    if (stringElement.includes("3")) {
       outputRange.push("Won't you be my neighbor?");
     } else if (element === 2) {
       outputRange.push("Boop!");

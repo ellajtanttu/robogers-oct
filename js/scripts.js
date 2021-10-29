@@ -9,6 +9,8 @@ function beepBoop(number) {
   inputRange.forEach(function(element) {
     if (element === 3) {
       outputRange.push("Won't you be my neighbor?");
+    } else if (element === 2) {
+      outputRange.push("Boop!");
     } else if (element === 1) {
       outputRange.push("Beep!");
     } else {

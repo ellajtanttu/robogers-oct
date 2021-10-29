@@ -117,4 +117,9 @@ Code:
 beepBoop(4);
 Expected Output: [-4,-3,-2,-1]
 
+Test: "It should replace any number containing 3 with 'Won't you be my neighbor, name?'"
+Code:
+beepBoop(13);
+Expected Output: [ 0,'Beep!','Boop!','Won\'t you be my neighbor, name?',4,5,6,7,8,9,10,11,12,'Won\'t you be my neighbor, name?' ]
+
 

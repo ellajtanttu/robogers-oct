@@ -67,7 +67,12 @@ I'll need:
 ## Specs
 Describe: beepBoop()
 
-Test: "It should return 1 if the number 1 is inputted"
+Test: "It should return 0 if the number 0 is inputted"
 Code:
-beepBoop(1);
-Expected Output: 1
+beepBoop(0);
+Expected Output: 0
+
+Test: "It should return array range from 0 to 4 if the number 4 is inputted"
+Code:
+beepBoop(4);
+Expected Output: [0,1,2,3,4]

@@ -12,7 +12,7 @@ function beepBoop(number) {
       outputRange.push("Won't you be my neighbor?");
     } else if (stringElement.includes("2")) {
       outputRange.push("Boop!");
-    } else if (element === 1) {
+    } else if (stringElement.includes("1")) {
       outputRange.push("Beep!");
     } else {
       outputRange.push(element);

@@ -28,3 +28,20 @@ function beepBoop(number) {
 };
 
 // UI Logic:
+$(document).ready(function() {
+  $("#numberInput").submit(function(event) {
+    event.preventDefault();
+    $(".results").show();
+    $(".list-group").empty()
+
+    const formInput = parseInt($("#inputNum").val());
+    let resultArray = [];
+    console.log("formInput = " + formInput);
+    resultArray = beepBoop(formInput);
+    console.log("resultArray = " + resultArray);
+    resultArray.forEach(function(element) {
+      $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
+    })
+
+  });
+});

@@ -18,6 +18,10 @@ h1 {
   font-family: 'Megrim', cursive;
   font-size: 6vw;
 }
+h3 {
+  font-family: 'Megrim', cursive;
+  font-size: 3vw;
+}
 .container {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -34,8 +38,22 @@ h1 {
   padding-bottom: 30px;
 }
 .results {
+  display: none;
   padding-bottom: 30px;
 }
-#introText {
-
+li {
+  float: left;
+  width: auto;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 0.05em;
+}
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.521);
+  list-style-type: none;
+  overflow: hidden;
+  border-width: 0 0 1px 0; 
+  border-style: solid dotted inset double;  
+  border-color: rgba(255, 255, 255, 0.349);
 }

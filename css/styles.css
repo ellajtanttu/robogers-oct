@@ -41,6 +41,9 @@ h3 {
   display: none;
   padding-bottom: 30px;
 }
+.btn {
+  background-color: rgba(151, 253, 248, 0.411);
+}
 li {
   float: left;
   width: auto;
@@ -56,4 +59,5 @@ li {
   border-width: 0 0 1px 0; 
   border-style: solid dotted inset double;  
   border-color: rgba(255, 255, 255, 0.349);
+  margin-bottom: 30px;
 }

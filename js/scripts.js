@@ -41,7 +41,11 @@ $(document).ready(function() {
     console.log("resultArray = " + resultArray);
     resultArray.forEach(function(element) {
       $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
-    })
+    });
 
+  });
+  $("#clear").submit(function(event) {
+    event.preventDefault();
+    $(".list-group").empty();
   });
 });

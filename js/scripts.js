@@ -42,45 +42,29 @@ $(document).ready(function() {
     const orderInput = $("#resultOrder").val();
     console.log("orderInput = " + orderInput);
   
-    let resultArray = [];
-    resultArray = beepBoop(formInput, formInputName);
+    let resultArray = beepBoop(formInput, formInputName);
     console.log("resultArray = " + resultArray);
 
-    $(".results").show();
-    $(".col-md#imgDiv").show();
-    $(".list-group").empty();
+    if ((formInput === NaN) || (formInputName === "") || (orderInput === "orderNone")) {
+      $("#oops").show();
+    } else {
+      $("#oops").hide();
+      $(".results").show();
+      $(".col-md#imgDiv").show();
+      $(".list-group").empty();
+      resultArray.forEach(function(element) {
+        if (orderInput === "leastToGreatest") {
+          $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
+        } else if (orderInput === "greatestToLeast") {
+          $(".list-group").prepend("<li class='list-group-item'>" + element + "</li>");
+        };
+      });
+    };
 
-
-    resultArray.forEach(function(element) {
-      if (orderInput === "leastToGreatest") {
-        $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
-      } else {
-        $(".list-group").prepend("<li class='list-group-item'>" + element + "</li>");
-      };
     
-    });
-
-
-    // $("#defaultOrder").click(function() {
-    //   $(".list-group").empty();
-    //   console.log("list group emptied")
-    //   resultArray.forEach(function(element) {
-    //     $(".list-group").append("<li class='list-group-item'>" + element + "</li>");
-    //     console.log("item appended")
-
-    //   });
-    // });
-    // $("b#ReverseOrder").click(function() {
-    //   $(".list-group").empty();
-    //   console.log("list group emptied")
-    //   resultArray.forEach(function(element) {
-    //     $(".list-group").prepend("<li class='list-group-item'>" + element + "</li>");
-    //     console.log("item prepended")
-    //   });
-    // });
-
-
   });
+
+
   $("#clear").submit(function(event) {
     event.preventDefault();
     $(".results").hide();

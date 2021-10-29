@@ -83,3 +83,7 @@ li {
 #mrRob {
   max-height: 300px;
 }
+
+#oops {
+  display: none;
+}

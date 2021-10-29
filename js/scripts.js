@@ -3,6 +3,11 @@ function beepBoop(number) {
   const inputNumber = number;
   let inputRange = [];
   let outputRange = [];
+  if (inputNumber.toString().includes("-")) {
+    for (let i = inputNumber; i < 1; i++) {
+      inputRange.push(i);
+    }
+  }
   for (let i = 0; i < inputNumber + 1; i++) {
     inputRange.push(i);
   }

@@ -1,13 +1,41 @@
+/* font-family: 'Asap', sans-serif;
+font-family: 'Megrim', cursive; */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2680&q=80");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
+  background-position: bottom;
+  font-family: 'Asap', sans-serif;
+  color: white;
+}
+img {
+  max-width: 100%;
+
+}
+h1 {
+  font-family: 'Megrim', cursive;
+  font-size: 6vw;
+}
 .container {
   margin-top: 45px;
   margin-bottom: 45px;
+  max-width: 70vw;
 }
 .intro {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-width: 0 0 5px 0; /* top right bottom left */
+  border-style: solid dotted inset double;  
+  border-color: white;
+  line-height: 200%;
 }
 .inputArea {
   padding-bottom: 30px;
 }
 .results {
   padding-bottom: 30px;
+}
+#introText {
+
 }

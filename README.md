@@ -14,6 +14,9 @@
 
 _A web application in which the user may enter their name, a number (negative or positive), and a preference for order of least to most or vice versa. Once the form is submitted, the number is translated into a list from 0 to that number, or that number to 0 (depending on order preference) into BeepBoop language. This means that any number containing a 3, 2, or 1 will ask the user if they would like to be it's neighbor; containing 2 or 1 (but not 3) will translate to "boop!"; or 1 (but not 3 or 2) will translate to "beep!"_
 
+## View Deployment - GH-Pages
+_https://ellajtanttu.github.io/robogers-oct/_
+
 ## Setup/Installation Requirements
 
 * _Navigate to https://github.com/ellajtanttu/robogers-oct in your browser_

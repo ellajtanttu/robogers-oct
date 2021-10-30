@@ -45,12 +45,21 @@ $(document).ready(function() {
     let resultArray = beepBoop(formInput, formInputName);
     console.log("resultArray = " + resultArray);
 
-    if ((formInput === NaN) || (formInputName === "") || (orderInput === "orderNone")) {
+    if ((formInput.toString() === "NaN") || (formInputName === "") || (orderInput === "orderNone")) {
       $("#oops").show();
     } else {
       $("#oops").hide();
       $(".results").show();
-      $(".col-md#imgDiv").show();
+      $(".col-md#imgDiv1").hide();
+      $(".col-md#imgDiv2").hide();
+      $(".col-md#imgDiv3").hide();
+      if (formInput < 0) {
+        $(".col-md#imgDiv1").show();
+      } else if ((formInput > 0) && (formInput < 50)) {
+        $(".col-md#imgDiv2").show(); 
+      } else {
+        $(".col-md#imgDiv3").show();
+      }
       $(".list-group").empty();
       resultArray.forEach(function(element) {
         if (orderInput === "leastToGreatest") {

@@ -65,23 +65,28 @@ li {
   border-color: rgba(255, 255, 255, 0.349);
   margin-bottom: 30px;
 }
-.col-md#imgDiv {
+#imgDiv1, #imgDiv2, #imgDiv3 {
+  /* background-color: #ffffff; */
   display: none;
-  border-width: 5px; 
-  border-style: solid;  
-  border-color: white;
-  margin-bottom: 35px;
-  max-width: 50vw;
-  border-radius: 25vw;
-  box-shadow: 5px 10px 10px #ffffff;
-  margin-right: 25px;
+  /* margin-bottom: 35px;
+  max-width: 50vw; */
 }
 #introDiv {
   width: 100%;
+  height: auto;
+}
+
+#introText {
+  /* position: absolute; */
+  bottom: 0;
 }
 
 #mrRob {
-  max-height: 300px;
+  display: block;
+  max-height: 100%;
+  margin: auto;
+  /* position: absolute; */
+  bottom: 0;
 }
 
 #oops {

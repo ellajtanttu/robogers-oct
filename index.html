@@ -7,36 +7,43 @@
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,500;1,600;1,700&family=Megrim&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,500;1,600;1,700&family=Megrim&display=swap"
+    rel="stylesheet">
   <title>Mr. Robogers Neighborhood</title>
 </head>
 
 <body>
   <div class="container">
-
     <div class="intro">
       <div class="row">
         <div class="col-md" id="imgDiv1">
-          <img class="mrRob" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG17.png&f=1&nofb=1" alt="robot">
+          <img class="mrRob"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG17.png&f=1&nofb=1"
+            alt="robot">
         </div>
         <div class="col-md" id="imgDiv2">
-          <img class="mrRob" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.valuewalk.com%2Fwp-content%2Fuploads%2F2018%2F01%2Frobot_1517458332.png&f=1&nofb=1" alt="robot">
+          <img class="mrRob"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.valuewalk.com%2Fwp-content%2Fuploads%2F2018%2F01%2Frobot_1517458332.png&f=1&nofb=1"
+            alt="robot">
         </div>
         <div class="col-md" id="imgDiv3">
-          <img class="mrRob" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG24.png&f=1&nofb=1" alt="robot">
+          <img class="mrRob"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG24.png&f=1&nofb=1"
+            alt="robot">
         </div>
         <div class="col-md" id="introDiv">
           <div id="introText">
-          <h1>Mr. Roboger's Neighborhood</h1>
-          <p>Mr. Roboger is a well loved and long-term fixture of our neighborhood. He performs a very important role for us:
-            to translate numbers into robot-speak. If it weren't for him, we wouldn't be able to
-            communicate with all the robots!!! To turn a number (any number) into robot language, enter it below:</p>
+            <h1>Mr. Roboger's Neighborhood</h1>
+            <p>Mr. Roboger is a well loved and long-term fixture of our neighborhood. He performs a very important role
+              for us:
+              to translate numbers into robot-speak. If it weren't for him, we wouldn't be able to
+              communicate with all the robots!!! To turn a number (any number) into robot language, enter it below:</p>
           </div>
         </div>
       </div>
     </div>
-
     <div class="inputArea">
       <form id="numberInput">
         <div class="row">
@@ -63,22 +70,18 @@
             <button type="submit" class="btn">Translate</button>
           </div>
         </div>
-        </form>
+      </form>
     </div>
-    <div id="oops"><p>UH-OH–– please complete All of the fields in the form above</p></div>
-
+    <div id="oops">
+      <p>UH-OH–– please complete All of the fields in the form above</p>
+    </div>
     <div class="results">
       <h3>Translated BeepBoop Speak:</h3>
-        <!-- <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="submit" class="btn btn-secondary" id="defaultOrder">Default Order</button>
-          <button type="submit" class="btn btn-secondary" id="reverseOrder">Reverse Order</button>
-        </div> -->
       <ul class="list-group" id="outputList"></ul>
       <form id="clear">
         <button type="submit" class="btn btn-sm-dark">Clear Translation</button>
       </form>
     </div>
-
   </div>
 </body>
 

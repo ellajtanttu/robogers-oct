@@ -12,7 +12,7 @@
 
 ## Description
 
-_TO BE COMPLETED AFTER CODE IS BUILT_
+_A web application in which the user may enter their name, a number (negative or positive), and a preference for order of least to most or vice versa. Once the form is submitted, the number is translated into a list from 0 to that number, or that number to 0 (depending on order preference) into BeepBoop language. This means that any number containing a 3, 2, or 1 will ask the user if they would like to be it's neighbor; containing 2 or 1 (but not 3) will translate to "boop!"; or 1 (but not 3 or 2) will translate to "beep!"_
 
 ## Setup/Installation Requirements
 
@@ -67,59 +67,59 @@ I'll need:
 ## Specs
 Describe: beepBoop()
 
-Test: "It should return 0 if the number 0 is inputted"
-Code:
-beepBoop(0);
+Test: "It should return 0 if the number 0 is inputted"\
+Code:\
+beepBoop(0);\
 Expected Output: 0
 
-Test: "It should return array range from 0 to 4 if the number 4 is inputted"
-Code:
-beepBoop(4);
+Test: "It should return array range from 0 to 4 if the number 4 is inputted"\
+Code:\
+beepBoop(4);\
 Expected Output: [0,1,2,3,4]
 
-Test: "It should push 'found one' to end of array if 1 is present"
-Code:
-beepBoop(4);
+Test: "It should push 'found one' to end of array if 1 is present"\
+Code:\
+beepBoop(4);\
 Expected Output: [0,1,2,3,4,"found one"]
 
-Test: "It should replace 1 with 'Beep!' in an output array"
-Code:
-beepBoop(4);
+Test: "It should replace 1 with 'Beep!' in an output array"\
+Code:\
+beepBoop(4);\
 Expected Output: [0,"Beep!",2,3,4,]
 
-Test: "It should replace 3 with 'Won't you be my neighbor?' in an output array"
-Code:
-beepBoop(4);
+Test: "It should replace 3 with 'Won't you be my neighbor?' in an output array"\
+Code:\
+beepBoop(4);\
 Expected Output: [0,"Beep!",2,"Won't you be my neighbor?",4,]
 
-Test: "It should replace 2 with 'Boop!' in an output array"
-Code:
-beepBoop(4);
+Test: "It should replace 2 with 'Boop!' in an output array"\
+Code:\
+beepBoop(4);\
 Expected Output: [0,'Beep!','Boop!','Won't you be my neighbor?',4,]
 
-Test: "It should replace any number containing 3 with 'Won't you be my neighbor?'"
-Code:
-beepBoop(13);
+Test: "It should replace any number containing 3 with 'Won't you be my neighbor?'"\
+Code:\
+beepBoop(13);\
 Expected Output: [ 0,'Beep!','Boop!','Won\'t you be my neighbor?',4,5,6,7,8,9,10,11,12,'Won\'t you be my neighbor?' ]
 
-Test: "It should replace any number containing 2 but not 3 with 'Boop!'"
-Code:
-beepBoop(13);
-Expected Output: [ 0,'Beep!','Boop!','Won't you be my neighbor?',4,5,6,7,8,9,10,11,'Boop!','Won\'t you be my neighbor?' ] 
+Test: "It should replace any number containing 2 but not 3 with 'Boop!'"\
+Code:\
+beepBoop(13);\
+Expected Output: [ 0,'Beep!','Boop!','Won't you be my neighbor?',4,5,6,7,8,9,10,11,'Boop!','Won\'t you be my neighbor?' ]
 
-Test: "It should replace any number containing 1 but not 2 or 3 with 'Beep!'"
-Code:
-beepBoop(13);
-Expected Output: [ 0,'Beep!','Boop!','Won't you be my neighbor?',4,5,6,7,8,9,'Beep!','Beep!','Boop!','Won\'t you be my neighbor?' ] 
+Test: "It should replace any number containing 1 but not 2 or 3 with 'Beep!'"\
+Code:\
+beepBoop(13);\
+Expected Output: [ 0,'Beep!','Boop!','Won't you be my neighbor?',4,5,6,7,8,9,'Beep!','Beep!','Boop!','Won\'t you be my neighbor?' ]
 
-Test: "It should return array range from number to 0 if the number -4 is inputted"
-Code:
-beepBoop(4);
+Test: "It should return array range from number to 0 if the number -4 is inputted"\
+Code:\
+beepBoop(4);\
 Expected Output: [-4,-3,-2,-1]
 
-Test: "It should replace any number containing 3 with 'Won't you be my neighbor, name?'"
-Code:
-beepBoop(13);
+Test: "It should replace any number containing 3 with 'Won't you be my neighbor, name?'"\
+Code:\
+beepBoop(13);\
 Expected Output: [ 0,'Beep!','Boop!','Won\'t you be my neighbor, name?',4,5,6,7,8,9,10,11,12,'Won\'t you be my neighbor, name?' ]
 
 

@@ -54,11 +54,11 @@ $(document).ready(function() {
       $(".col-md#imgDiv2").hide();
       $(".col-md#imgDiv3").hide();
       if (formInput < 0) {
-        $(".col-md#imgDiv1").show();
+        $(".col-md#imgDiv1").slideDown("slow").fadeIn("slow");
       } else if ((formInput > 0) && (formInput < 50)) {
-        $(".col-md#imgDiv2").show(); 
+        $(".col-md#imgDiv2").slideDown("slow").fadeIn("slow");
       } else {
-        $(".col-md#imgDiv3").show();
+        $(".col-md#imgDiv3").slideDown("slow").fadeIn("slow");
       }
       $(".list-group").empty();
       resultArray.forEach(function(element) {

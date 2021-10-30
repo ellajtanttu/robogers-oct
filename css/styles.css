@@ -30,6 +30,12 @@ li {
     font-size: .75em;
     letter-spacing: 0.05em;
 }
+.row {
+  display: flex;
+  justify-content: center;
+  /* align-items: stretch; */
+  /* max-height: 400px; */
+}
 .container {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -50,7 +56,7 @@ li {
   padding-bottom: 30px;
 }
 .btn {
-  background-color: rgba(151, 253, 248, 0.411);
+  background-color: rgb(19, 112, 108);
   width: 100%;
 }
 .form-group {
@@ -60,34 +66,35 @@ li {
   background-color: rgba(0, 0, 0, 0.521);
   list-style-type: none;
   overflow: hidden;
-  border-width: 0 0 5px 0; 
-  border-style: solid dotted inset double;  
+  border-width: 0 0 5px 0;
+  border-style: solid;
   border-color: rgba(255, 255, 255, 0.349);
   margin-bottom: 30px;
 }
 #imgDiv1, #imgDiv2, #imgDiv3 {
   /* background-color: #ffffff; */
   display: none;
+  z-index: -1;
   /* margin-bottom: 35px;
   max-width: 50vw; */
 }
-#introDiv {
+/* #introDiv {
   width: 100%;
   height: auto;
-}
+} */
 
-#introText {
-  /* position: absolute; */
+/* #introText {
+  position: absolute;
   bottom: 0;
-}
+} */
 
-#mrRob {
+/* #mrRob {
   display: block;
-  max-height: 100%;
+  max-height: 100%; 
   margin: auto;
-  /* position: absolute; */
+  position: absolute; 
   bottom: 0;
-}
+} */
 
 #oops {
   display: none;
